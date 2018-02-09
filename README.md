@@ -20,5 +20,13 @@ devices = {<br>
 <br>
 Here need to specify commands that need to be collected:<br>
 cmds=["show clock","show chassis","show inventory"]<br>
+<br>
 
-
+#UNICODE2CYRILLIC<br>
+If you have string like below, in unicode format<br>
+>>> text<br>
+'\u041c\u043d\u043e\u0433\u043e'<br>
+the symbols are cyrillic, you can convert them to the cyrillic using function in this file. <br>
+>>> uni2rus(text)<br>
+'▒\x9cного'<br>
+Write it into the file or DB.<br>
